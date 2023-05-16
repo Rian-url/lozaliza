@@ -1,0 +1,30 @@
+{
+    "name": "monaca-template-onsenui-v2-js-splitter",
+    "version": "3.0.0",
+    "dependencies": {
+        "cordova-plugin-splashscreen": "6.0.0",
+        "monaca-plugin-monaca-core": "3.3.1",
+        "cordova-plugin-device-orientation": "2.0.1",
+        "cordova-plugin-geolocation": "4.1.0",
+        "cordova-plugin-device-motion": "2.0.1",
+        "cordova-plugin-whitelist": "1.3.5"
+    },
+    "cordova": {
+        "plugins": {
+            "cordova-plugin-splashscreen": {},
+            "monaca-plugin-monaca-core": {},
+            "cordova-plugin-device-orientation": {},
+            "cordova-plugin-geolocation": {},
+            "cordova-plugin-device-motion": {},
+            "cordova-plugin-whitelist": {}
+        }
+    },
+    "scripts": {
+        "monaca:preview": "npm run dev",
+        "dev": "browser-sync start -s www/ --watch --port 8080 --ui-port 8081"
+    },
+    "devDependencies": {
+        "browser-sync": "~2.27.7",
+        "cordova": "^11.0.0"
+    }
+}
